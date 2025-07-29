@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undergold - Lujo Subterráneo</title>
+
+  <!-- Tipografías desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gold-gradient {
+      background: linear-gradient(135deg, #FFD700, #FFA500, #FF8C00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .navbar {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid gold;
+    }
+
+    .navbar a {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #FFD700;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <h1 class="text-xl font-bold font-playfair gold-gradient">UNDERGOLD</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Tienda</a>
+      <a href="#">Colecciones</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- Sección principal -->
+  <section class="flex flex-col items-center justify-center min-h-screen text-center px-6">
+    <h2 class="text-5xl md:text-7xl font-playfair gold-gradient mb-4">Lujo Subterráneo</h2>
+    <p class="text-lg md:text-xl text-gray-300 max-w-xl mb-8">
+      Inspirados en el streetwear y el estilo de vida de lujo, Undergold redefine la moda urbana desde Latinoamérica para el mundo.
+    </p>
+    <a href="https://undergold.odoo.com" target="_blank"
+       class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">
+      Visita nuestra tienda
+    </a>
+  </section>
+</body>
+</html>
+
+  
